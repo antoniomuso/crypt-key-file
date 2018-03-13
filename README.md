@@ -2,7 +2,7 @@
 Extension of crypto Symmetric key API that uses a file as a key.
 
 ## Getting Started
-```JavaScrpt
+```js
 var {createCypher, createDecypher} = require('./lib/crypto-key-file')
 var fs = require('fs')
 

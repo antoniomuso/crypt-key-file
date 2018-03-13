@@ -14,9 +14,9 @@ var fs = require('fs')
     var cypher = await createCypher('aes192','./README.md')
     rs.pipe(cypher).pipe(ws)
 })()
+```
 
-
-/*
+```js
 ;(async function () {
     var ws = fs.createWriteStream('./decrypt')
     var rs = fs.createReadStream('./crypted')

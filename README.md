@@ -1,5 +1,5 @@
 # crypt-key-file
-Extension of crypto Symmetric key API that uses a file as a key.
+Extension of [crypto](https://nodejs.org/api/crypto.html#crypto_class_cipher) Symmetric key API that uses a file as a key.
 
 ## Getting Started
 ```js

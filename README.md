@@ -11,7 +11,7 @@ var fs = require('fs')
     var rs = fs.createReadStream('./LICENSE')
     // algoritms are sames of crypto
     // file README is the key 
-    var cypher = await createCypher('aes192','./README.md')
+    var cypher = await createCypher('aes192','./FILEKEY.mp4')
     rs.pipe(cypher).pipe(ws)
 })()
 ```
@@ -20,7 +20,7 @@ var fs = require('fs')
 ;(async function () {
     var ws = fs.createWriteStream('./decrypt')
     var rs = fs.createReadStream('./crypted')
-    var cypher = await createDecypher('aes192','./README.md')
+    var cypher = await createDecypher('aes192','./FILEKEY.mp4')
     rs.pipe(cypher).pipe(ws)
 })()
 

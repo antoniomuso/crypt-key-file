@@ -3,7 +3,7 @@ Extension of [crypto](https://nodejs.org/api/crypto.html#crypto_class_cipher) Sy
 
 ## Getting Started
 ```js
-var {createCypher, createDecypher} = require('crypto-key-file')
+var {createCypher, createDecypher} = require('crypt-key-file')
 var fs = require('fs')
 
 ;(async function () {
